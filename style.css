@@ -1,0 +1,215 @@
+/* BOILER PLATE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+/* MAIN STYLE */
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+#menu{
+    display:flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+
+
+}
+#menu h6{
+    background-color: #19d1ff;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 50px;
+}
+#intro{
+    height: 200px;
+    padding: 15px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    line-height: 60px;
+    background-color: #89e7ff;
+    border-bottom: 5px double black;
+    letter-spacing: 2px;
+    display: flex;
+}
+#right-div{
+    justify-content: space-around;
+    width: 10%;
+    margin-right: 60px;
+    margin-top: 20px;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+#left-div{
+width: 90%;
+}
+
+#profile-img{
+    height: 120px;
+    width: 93px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+  #profile-img:hover { /*  image Hover */
+    transform: scale(1.1); /* Scale the image slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  }
+#address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+#address a{
+    text-decoration: none;
+}
+
+#address h5{
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#address h5:hover {
+    background-color: palegoldenrod;
+    border-radius: 10px;
+  }
+
+#address h3{
+    font-size: 30px;
+    color: black;
+    font-style: normal;
+}
+/* header end */
+#line{
+    width: 100%;
+    display: flex;
+}
+
+#about{
+    width: 60%;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    border-right: 5px solid black;
+    border-radius: 20px;
+    letter-spacing: -1px;
+
+}
+
+#icons{
+    width: 30%;
+    font-family: serif;
+}
+/* hover for about elment */
+#hover-element {
+    display: inline-block; /* Makes the underline fit the text size */
+    position: relative;
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Optional for emphasis */
+    color: #000000; /* Text color */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  #hover-element::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: 0; /* Position underline at the bottom */
+    right: 0; /* Start from the right side */
+    width: 0; /* Start with no underline */
+    height: 2px; /* Set the thickness of the underline */
+    background-color: #007BFF; /* Underline color */
+    transition: width 0.5s ease, right 0.5s ease; /* Smooth underline animation */
+  }
+  
+  #hover-element:hover::after {
+    width: 100%; /* Expand the underline to cover the text */
+    right: 0; /* Keep it aligned to the right */
+  }
+  
+  #hover-element:hover::after:not(:hover) {
+    right: 2 !important;
+  }
+
+/* ----- */
+#icons h5{
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 1000;
+
+}
+#icons i{
+    font-size: 45px;
+    margin: 10px;
+    color: black;
+}
+#icons a{
+    text-decoration: none;
+}
+/* WORK DETAILS */
+
+#work{
+    height: 250px;
+    margin: 25px;
+    padding: 15px 0;
+    display: flex;
+    border-top: 2px solid black;
+
+}
+#work1{
+    width: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border-right: 2px solid black;
+    
+}
+#work2{
+    width: 75%;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#skills,#achivements{
+    height: 50%;
+    display: flex;
+    padding: 5px 0px;
+}
+#skills{border-bottom: 2px solid black;padding-bottom: 20px;}
+#achivements{padding-top: 20px;}
+
+#work1 h3,#work2 h3{
+    font-size: 30px;
+
+}
+#work2 h6{
+    font-size: 20px;
+}
+#webdev,#java,#dsa,#problem-solving{
+    width: 50%;
+    padding: 0px 10px;
+}
+#webdev,#dsa{
+    border-right: 2px solid black;
+}
