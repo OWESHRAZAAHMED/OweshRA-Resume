@@ -171,7 +171,6 @@ width: 90%;
 /* WORK DETAILS */
 
 #work{
-    height: 250px;
     margin: 25px;
     padding: 15px 0;
     display: flex;
@@ -196,19 +195,23 @@ width: 90%;
     display: flex;
     padding: 5px 0px;
 }
-#skills{border-bottom: 2px solid black;padding-bottom: 20px;}
-#achivements{padding-top: 20px;}
+#skills{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+#achivements{
+    padding-top: 20px;
+}
 
 #work1 h3,#work2 h3{
     font-size: 30px;
-
 }
 #work2 h6{
     font-size: 20px;
 }
 #webdev,#java,#dsa,#problem-solving{
     width: 50%;
-    padding: 0px 10px;
+    margin: 0px 10px;
 }
 #webdev,#dsa{
     border-right: 2px solid black;
