@@ -17,30 +17,13 @@ html,body{
     height: 100%;
     width: 100%;
 }
-#menu{
-    display:flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%;
-    padding: 10px;
-
-
-}
-#menu h6{
-    background-color: #19d1ff;
-    padding: 5px;
-    border: solid 2px black;
-    border-radius: 50px;
-}
 #intro{
     height: 200px;
     padding: 15px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
     line-height: 60px;
-    background-color: #89e7ff;
+    background-color: #0affd6;
     border-bottom: 5px double black;
     letter-spacing: 2px;
     display: flex;
@@ -216,6 +199,23 @@ width: 90%;
 }
 #webdev,#dsa{
     border-right: 2px solid black;
+}
+#project{
+    padding: 10px 1px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1px 10px;
+    border-top: 2px solid black;
+}
+footer {
+    background-color: #0affd6;
+    padding: 10px 20px;
+    size: 60px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom:0;
+    width: 100%;
 }
 
 /* Responsive styles for mobile devices */
